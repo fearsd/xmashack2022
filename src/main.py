@@ -24,6 +24,10 @@ def get_file():
 
 @app.route('/test_files')
 def test_files():
-    text = FileConverter().convert('../files/m.pdf', '.pdf')
+    text = ""
+    prefix = '../files/'
+    for f in os.listdir(prefix):
+        _, ext = os.path.splitext(f)
+        text += FileConverter().convert(prefix+f, ext)
     return text
 

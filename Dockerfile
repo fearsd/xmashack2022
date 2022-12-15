@@ -33,6 +33,6 @@ WORKDIR /files/
 COPY files/*.pdf /files/
 WORKDIR /app/
 
-ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8000", "main:app", "--reload"]
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8000", "main:app", "--reload", "--timeout", "600"]
 
 EXPOSE 8000

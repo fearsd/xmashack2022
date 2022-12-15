@@ -156,3 +156,5 @@ cython_debug/
 .idea/
 
 files/*.pdf
+
+.DS_Store
