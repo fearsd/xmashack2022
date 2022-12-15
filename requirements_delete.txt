@@ -1,0 +1,5 @@
+argcomplete
+beautifulsoup4
+extract-msg
+soupsieve
+SpeechRecognition
