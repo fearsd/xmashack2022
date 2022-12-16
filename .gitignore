@@ -159,3 +159,6 @@ files/*.pdf
 
 .DS_Store
 *.sock
+
+*.pdf
+images/*.jpeg
